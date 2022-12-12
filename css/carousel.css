@@ -1,0 +1,93 @@
+#staticImage {
+  display: none;
+}
+
+.carousel-indicators {
+  position: relative;
+  margin-top: 15px;
+}
+
+.carousel-indicators [data-bs-target] {
+  border: 1px solid #e03a3c;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+}
+
+.carousel-indicators .active {
+  background-color: #e03a3c;
+}
+
+@media (max-width: 991px) {
+  #mainCarousel {
+    display: none;
+  }
+
+  #staticImage {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: url(/images/carousel/static1.jpg) top center no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  #staticImage:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .info {
+    padding: 30px;
+  }
+
+  .info h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+  }
+
+  .info h2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #e03a3c;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .info p {
+    color: rgb(255, 255, 255, 1);
+    font-size: 18px;
+    position: relative;
+    letter-spacing: 1px;
+  }
+
+  .info .btn-get-started {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    position: relative;
+    border-radius: 50px;
+    margin: 10px;
+    color: #fff;
+    border: 2px solid #e03a3c;
+    text-decoration: none;
+  }
+}

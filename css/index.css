@@ -1,0 +1,132 @@
+@media (min-width: 991px) {
+  body::before {
+    display: block;
+    content: "";
+    height: 68px;
+  }
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-elmway .container-fluid {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.bg-elmway:before {
+  content: "";
+  background: #595959;
+  position: absolute;
+  bottom: 60px;
+  top: 60px;
+  left: 0;
+  right: 0;
+  transform: skewY(-3deg);
+}
+
+.about-us,
+.services,
+.testimonials,
+.meet-the-team,
+.get-in-touch {
+  padding: 80px 20px;
+}
+
+.about-us h3 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.about-us h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #e03a3c;
+  left: 0;
+  bottom: 0;
+}
+
+.meet-the-team h2,
+.meet-the-team .section-title p {
+  color: #fff;
+}
+
+.get-in-touch .contact-box {
+  text-align: center;
+}
+
+.get-in-touch .contact-box i {
+  padding-bottom: 10px;
+  font-size: 32px;
+}
+
+.get-in-touch .contact-box h3 {
+  margin-bottom: 10px;
+}
+
+.get-in-touch .contact-box p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .services .card {
+    padding: 20px;
+  }
+
+  .testimonials .section-title,
+  .meet-the-team .section-title,
+  .get-in-touch .section-title {
+    text-align: center;
+    padding-bottom: 15px;
+    position: relative;
+  }
+
+  .testimonials .section-title p,
+  .meet-the-team .section-title p,
+  .get-in-touch .section-title p {
+    margin: 0;
+  }
+
+  .testimonials h2,
+  .meet-the-team h2,
+  .get-in-touch h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  .testimonials h2:after,
+  .meet-the-team h2:after,
+  .get-in-touch h2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #e03a3c;
+    left: calc(50% - 25px);
+    bottom: 0;
+  }
+
+  .testimonial-card {
+    border-radius: 15px;
+    box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
+    margin: 25px;
+    padding: 15px;
+  }
+
+  .meet-the-team .card {
+    margin: 15px;
+  }
+}
